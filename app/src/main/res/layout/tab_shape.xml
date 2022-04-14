@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/material_button"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:strokeColor="@color/white"
+    app:strokeWidth="1dp"
+    android:text="@string/app_name"
+    android:textAllCaps="false"
+    android:layout_height="match_parent">
+
+</com.google.android.material.button.MaterialButton>

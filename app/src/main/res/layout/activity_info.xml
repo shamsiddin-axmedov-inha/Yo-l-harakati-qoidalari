@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <Toolbar
+        android:id="@+id/toolbarInfoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/theme"
+        android:title="Yo’l belgisini o'zgartirish"
+        android:navigationIcon="@drawable/left_icon"
+        android:titleTextColor="@color/white"
+        tools:targetApi="lollipop"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/symbol_image"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInfoActivity" />
+
+    <TextView
+        android:id="@+id/lawName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="13dp"
+        android:text="Shlagbaumli temir yo'l kesishmasi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintTop_toBottomOf="@+id/symbol_image" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lawName">
+
+        <TextView
+            android:id="@+id/descriptionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ushbu yo‘l belgisi to‘suvchi qurilma bilan jihozlangan
+temir yo‘l kesishmasiga yetmasdan o‘rnatiladi va
+transport vositalari haydovchilarini oldinda to‘suvchi
+qurilma borligi haqida ogohlantiradi."
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
